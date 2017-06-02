@@ -5,14 +5,15 @@ permalink: /about/
 ---
 
 ### 관심분야
-* 데이터 수집
-* 데이터 분석
+* 데이터 수집 및 분석
+* `Functional` 프로그래밍
+* Compiler, Languages
 
 ### 사용언어
-* C
-* Java
-* Python
-* Ruby on Rails(Not Ruby!)
+* C/C++ (Under C11/C++11)
+* Java (Under 1.8)
+* Python( > 3.x)
+* Django and ~~Ruby on Rails(Not Ruby!)~~
 
 ### 연락처
 * Blog : [www.sangkon.com](http://www.sangkon.com)

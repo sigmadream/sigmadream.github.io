@@ -2,7 +2,7 @@
 layout: post
 title: 인간이 버린 사랑
 author: 이이체 
-tags: book,poem
+tags: book
 ---
 
 ## 1

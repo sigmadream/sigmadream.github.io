@@ -6,7 +6,7 @@ permalink: /goals/
 
 # 2018 목표
 
-## ## 대학원(파트타임, 박사과정, 수료)
+## 대학원(수료)
 
 * 2018년 2학기
 	* 침입탐지 알고리즘
@@ -41,9 +41,11 @@ permalink: /goals/
 	* [엑셀을 활용한 마케팅 분석 기법](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=54526377)
 	* [앤더슨의 통계학](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=86829983)
 
-======
+------
 
 # 2017 목표 및 평가
+
+## 2017년 회고
 
 * 목표를 현실적으로 잡아야겠으나, 욕심을 줄이진 않아야겠다.
 
@@ -105,9 +107,11 @@ permalink: /goals/
 	* [~~판단력 비판~~](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=3733294)
 	* [~~실천이성비판~~](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=4470879)
 
-======
+----
 
 # 2016
+
+## 2016년 회고
 
 * 올해도 나름의 목표를 열심히 했고, 내년에도 꾸준히 도전하자!
 	* 데이터 분석은 꾸준히 하려고 했으나, 몇권의 책과 약간의 연습만 했을뿐 별다른 소득이 없었다.
@@ -131,14 +135,17 @@ permalink: /goals/
 	* ~~데이터를 분석하는 방법~~
 	 
 ## 간단한 앱(Android/iOS)을 만들자
+
 * 안드로이드
 	* GDG에서 진행했던 안드로이드 스터디 후 만든 ['개인 이력서' App](https://play.google.com/store/apps/details?id=com.sangkon.resume.sigmadreamresume) 
 * ~~iOS 관련 앱~~
 
 ## 책을 쓰자
+
 * ~~Python, Ruby on Rails 관련 책~~
 
 ## 책을 읽자
+
 * 플라톤 전집
 	* [정암학당 플라톤 전집 01 - 뤼시스](http://sigmadream.github.io/Lysis/)
 	* [정암학당 플라톤 전집 02 - 크리티아스](http://sigmadream.github.io/Kritias/)
@@ -160,6 +167,3 @@ permalink: /goals/
 		* ~~[정암학당 플라톤 전집 17 - 라케스]~~
 		* ~~[정암학당 플라톤 전집 18 - 소크라테스의 변명]~~
 		* ~~[정암학당 플라톤 전집 19 - 팔레보스]~~
-	
-	
-	

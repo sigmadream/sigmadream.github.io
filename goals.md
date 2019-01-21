@@ -9,45 +9,92 @@ permalink: /goals/
 ## 대학원(논문)
 
 * (현재 구상중)CQRS/Event-Sourcing 관련
-* (현재 구상중)MPI 기반 서버 성능 향상
+	* (현재 구상중)MPI 기반 Event-Sourcing을 사용한 연산 처리
+	* (현재 구상중)Event-Sourcing을 사용한 특정 이벤트 처리에 관한 내용
 
 ## 커뮤니티 활동
 
 * DBUG, 월 1회 `Django`를 사용한 취미 개발 중심의 hands-on 세션 진행할 예정
 	* 1~2분기, 영화 추천 시스템
+		* [`Django로 만들어보는 '영화 추천 시스템' (2/5)`](https://festa.io/events/189)
+		* `Django로 만들어보는 '영화 추천 시스템' (3/5)`(예정)
+		* `Django로 만들어보는 '영화 추천 시스템' (4/5)`(예정)
+		* `Django로 만들어보는 '영화 추천 시스템' (5/5)`(예정)
 	* 3~4분기, `Django`를 사용한 API 서버 및 Admin 페이지
+		* `Django로 만들어보는 '영화 추천 시스템 API/Admin' (1/6)`(예정)
+		* `Django로 만들어보는 '영화 추천 시스템 API/Admin' (2/6)`(예정)
+		* `Django로 만들어보는 '영화 추천 시스템 API/Admin' (3/6)`(예정)
+		* `Django로 만들어보는 '영화 추천 시스템 API/Admin' (4/6)`(예정)
+		* `Django로 만들어보는 '영화 추천 시스템 API/Admin' (5/6)`(예정)
+		* `Django로 만들어보는 '영화 추천 시스템 API/Admin' (6/6)`(예정)
 
 * 가능하다면 부산에서 작은 파이콘행사를 진행해 보고 싶음(이건 온전히 희망!)
+	* 2019년 1월 6일에 [작은 모임 진행](https://docs.google.com/document/d/1_VKG1oP5EE0kbK2nJ6qPCWEEMzrBwIacBBOSyUknvCw/edit?usp=sharing)
 
 ## 개인 스터디
 
 ### 머신러닝/딥러닝
 
-* 1~2분기, 머신러닝/딥러닝 관련 교재를 읽고 논의하는 작은 모임을 진행(월 1회 정도면 적당하지 않을까?)
+* 1~2분기, 머신러닝/딥러닝 관련 교재를 읽고 논의하는 작은 모임을 진행
+	* 1분기 도서 목록
+		* [처음 배우는 데이터과학](https://ridibooks.com/v2/Detail?id=443000578)(2019년 1월)
+		* [처음 배우는 인공지능](https://ridibooks.com/v2/Detail?id=443000499)(2019년 1월)
+		* [처음 배우는 머신러닝](https://ridibooks.com/v2/Detail?id=443000531)(2019년 1월)
+		* [처음 배우는 딥러닝 수학](https://ridibooks.com/v2/Detail?id=443000571)(2019년 1월)
+		* [강화학습 첫걸음](https://ridibooks.com/v2/Detail?id=443000548)(2019년 2월)
+		* [딥러닝 첫걸음](https://ridibooks.com/v2/Detail?id=443000455)(2019년 2월)
+		* [신경망 첫걸음](https://ridibooks.com/v2/Detail?id=443000476)(2019년 2월)
+		* [Do It! 데이터분석을 위한 판다스 입문](https://ridibooks.com/v2/Detail?id=754024444)(2019년 3월)
+		* [핸즈온 머신러닝](https://ridibooks.com/v2/Detail?id=443000590)(2019년 3월)
+	* 2분기 도서 목록
+		* [나의 첫 머신러닝 / 딥러닝](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=177439911)(2019년 4월)
+		* [딥러닝 모델 설계를 떠받치는 기술](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178972237)(2019년 4월)
+		* [머신 러닝 부트캠프 with 파이썬](https://ridibooks.com/v2/Detail?id=754023840)(2019년 5월)
+		* [머신러닝 실무 프로젝트](https://ridibooks.com/v2/Detail?id=443000602)(2019년 5월)
+		* [밑바닥 부터 시작하는 딥러닝](https://ridibooks.com/v2/Detail?id=443000454)(2019년 6월)
+		* [딥러닝 부트캠프 with 파이썬](https://ridibooks.com/v2/Detail?id=754023827)(2019년 6월)
+		* [케라스 창시자에게 배우는 딥러닝](https://ridibooks.com/v2/Detail?id=754024868)(2019년 6월)
+
 * 3~4분기, 머신러닝/딥러닝 관련 프로젝트를 진행하면서 코드기반으로 흥미있는 주제를 진행
+		* [텐서플로로 시작하는 딥러닝 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=177063005)
+		* [러닝 텐서플로](https://ridibooks.com/v2/Detail?id=443000594)
+		* [실전활용! 텐서플로 딥러닝 프로젝트](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=174084516)
+		* [Deep Learning Cookbook](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178153051)
+		* [PyTorch를 활용한 머신러닝, 딥러닝 철저 입문](PyTorch를 활용한 머신러닝, 딥러닝 철저 입문)
+		* [PyTorch를 활용한 강화학습 / 심층강화학습 실전 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=176215268)
 
 ### 수학
 
 * 선형대수학
 	* 1분기, 기초적인 이론 진행
-	* 2분기, 이론적인 내용을 Python/C++을 사용해서 코드로 풀어보는 것
+		* [최신선형대수](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=3417578)(2019년 1,2,3월)
+		* [프로그래머를 위한 선형대수](https://ridibooks.com/v2/Detail?id=754023084)(2019년 1,2,3월)
+	* 2분기, 이론적인 내용을 Python을 사용해서 코드로 풀어보는 것
+		* [코딩 더 매트릭스](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=59668511)
+		* [수치해석 바이블](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=170560621)
 
 * 통계학
 	* 3분기, 통계의 기초적인 내용을 진행
-	* 4분기, Python/C++을 사용해서 통계문제를 풀어보는 것
+		* [통계의 힘](https://ridibooks.com/v2/Detail?id=173001387), [통계의 힘 - 실무](https://ridibooks.com/v2/Detail?id=173002695), [통계의 힘 - 데이터활용](https://ridibooks.com/v2/Detail?id=173003157)
+		* [프로그래머를 위한 베이지안 with Python](https://ridibooks.com/v2/Detail?id=754022885)
+		* [데이터 과학을 위한 통계](https://ridibooks.com/v2/Detail?id=443000639)
+	* 4분기, Python을 사용해서 통계문제를 풀어보는 것
+		* 교재 탐색 중
 
 ### iOS/Android
 
 * `Kotlin`과 `Swift`을 병행해서 조금씩 공부(1~2분기)
-* 스터디를 진행하면서 도전해볼 프로젝트
-	* 이력서(iOS/Android/OSX)
-	* ToDO(iOS/Android/OSX/Windows)
-	* Pomodoro Timer(iOS/Android/OSX/Windows)
+	* 스터디를 진행하면서 도전해볼 프로젝트
+		* 이력서(iOS/Android/OSX)
+		* ToDo(iOS/Android/OSX/Windows)
+		* Pomodoro Timer(OSX/Windows)
 
 ### Haskell 정리
 
-* 1~2분기, `Haskell` 문법 학습 및 SICP 연습문제 풀이
-* 3~4분기, `Haskell`을 사용한 Microservice Architecture 구현 연습
+* 1분기, `Haskell` 문법 학습
+* 2분기, SICP 연습문제 풀기
+* 3분기, `Haskell`을 사용한 Microservice Architecture 구현 연습
+* 4분기, `Haskell`을 사용한 Microservice Architecture 구현 연습 정리
 
 ------
 

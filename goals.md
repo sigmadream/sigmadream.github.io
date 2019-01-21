@@ -56,12 +56,12 @@ permalink: /goals/
 		* [케라스 창시자에게 배우는 딥러닝](https://ridibooks.com/v2/Detail?id=754024868)(2019년 6월)
 
 * 3~4분기, 머신러닝/딥러닝 관련 프로젝트를 진행하면서 코드기반으로 흥미있는 주제를 진행
-		* [텐서플로로 시작하는 딥러닝 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=177063005)
-		* [러닝 텐서플로](https://ridibooks.com/v2/Detail?id=443000594)
-		* [실전활용! 텐서플로 딥러닝 프로젝트](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=174084516)
-		* [Deep Learning Cookbook](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178153051)
-		* [PyTorch를 활용한 머신러닝, 딥러닝 철저 입문](PyTorch를 활용한 머신러닝, 딥러닝 철저 입문)
-		* [PyTorch를 활용한 강화학습 / 심층강화학습 실전 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=176215268)
+	* [텐서플로로 시작하는 딥러닝 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=177063005)
+	* [러닝 텐서플로](https://ridibooks.com/v2/Detail?id=443000594)
+	* [실전활용! 텐서플로 딥러닝 프로젝트](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=174084516)
+* [Deep Learning Cookbook](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178153051)
+	* [PyTorch를 활용한 머신러닝, 딥러닝 철저 입문](PyTorch를 활용한 머신러닝, 딥러닝 철저 입문)
+	* [PyTorch를 활용한 강화학습 / 심층강화학습 실전 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=176215268)
 
 ### 수학
 

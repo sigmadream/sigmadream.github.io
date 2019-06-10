@@ -41,7 +41,6 @@ permalink: /goals/
 		* ~~[Do It! 데이터분석을 위한 판다스 입문](https://ridibooks.com/v2/Detail?id=754024444)(2019년 3월)~~
 		* ~~[핸즈온 머신러닝](https://ridibooks.com/v2/Detail?id=443000590)(2019년 3월)~~
 	* 2분기 도서 목록
-		* ~~[나의 첫 머신러닝 / 딥러닝](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=177439911)(2019년 4월)~~
 		* ~~[딥러닝 모델 설계를 떠받치는 기술](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178972237)(2019년 4월)~~
 		* ~~[머신 러닝 부트캠프 with 파이썬](https://ridibooks.com/v2/Detail?id=754023840)(2019년 5월)~~
 		* ~~[머신러닝 실무 프로젝트](https://ridibooks.com/v2/Detail?id=443000602)(2019년 5월)~~

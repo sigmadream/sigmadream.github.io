@@ -6,13 +6,18 @@ permalink: /goals/
 
 # 2019 목표
 
+## 2019년 회고
+
+* 내가 하고 해야 하는 것,하고 싶은 것 그리고 할 수 있는 것을 제대로 구별하지 못해서 논문도 회사의 업무도 내가 원하는 만큼 성장하지 못했음
+* 건강도 나빠졌고, 외부활동의 기획도 많이 줄었음
+
 ## 대학원(논문)
 
-* (현재 구상중)CQRS/Event-Sourcing 관련
+* CQRS/Event-Sourcing 관련
 	* Event-Sourcing을 사용한 특정 이벤트 처리에 관한 내용
-		* KCC 2019에 아주 간단한 아이디어를 담은 논문 1편 제출
-		* ES/CQRS와 관련된 주제를 중심으로 Survey 논문 작성 중
-		* V2X에서 ES/CQRS를 적용한 프레임워크 제안 논문 작성 중
+		* ~~KCC 2019에 아주 간단한 아이디어를 담은 논문 1편 제출~~
+		* ~~ES/CQRS와 관련된 주제를 중심으로 Survey 논문 작성~~
+		* ~~V2X에서 ES/CQRS를 적용한 프레임워크 제안 논문 작성~~
 
 ## 커뮤니티 활동
 
@@ -44,24 +49,24 @@ permalink: /goals/
 		* ~~[딥러닝 모델 설계를 떠받치는 기술](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178972237)(2019년 4월)~~
 		* ~~[머신 러닝 부트캠프 with 파이썬](https://ridibooks.com/v2/Detail?id=754023840)(2019년 5월)~~
 		* ~~[머신러닝 실무 프로젝트](https://ridibooks.com/v2/Detail?id=443000602)(2019년 5월)~~
-		* [밑바닥 부터 시작하는 딥러닝](https://ridibooks.com/v2/Detail?id=443000454)(2019년 6월)
-		* [딥러닝 부트캠프 with 파이썬](https://ridibooks.com/v2/Detail?id=754023827)(2019년 6월)
-		* [케라스 창시자에게 배우는 딥러닝](https://ridibooks.com/v2/Detail?id=754024868)(2019년 6월)
+		* ~~[밑바닥 부터 시작하는 딥러닝](https://ridibooks.com/v2/Detail?id=443000454)(2019년 6월)~~
+		* ~~[딥러닝 부트캠프 with 파이썬](https://ridibooks.com/v2/Detail?id=754023827)(2019년 6월)~~
+		* ~~[케라스 창시자에게 배우는 딥러닝](https://ridibooks.com/v2/Detail?id=754024868)(2019년 6월)~~
 
 * 3~4분기, 머신러닝/딥러닝 관련 프로젝트를 진행하면서 코드기반으로 흥미있는 주제를 진행
-	* [텐서플로로 시작하는 딥러닝 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=177063005)
-	* [러닝 텐서플로](https://ridibooks.com/v2/Detail?id=443000594)
-	* [실전활용! 텐서플로 딥러닝 프로젝트](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=174084516)
-	* [Deep Learning Cookbook](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178153051)
-	* [PyTorch를 활용한 머신러닝, 딥러닝 철저 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=173025439)
-	* [PyTorch를 활용한 강화학습 / 심층강화학습 실전 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=176215268)
+	* ~~[텐서플로로 시작하는 딥러닝 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=177063005)~~
+	* ~~[러닝 텐서플로](https://ridibooks.com/v2/Detail?id=443000594)~~
+	* ~~[실전활용! 텐서플로 딥러닝 프로젝트](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=174084516)~~
+	* ~~[Deep Learning Cookbook](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=178153051)~~
+	* ~~[PyTorch를 활용한 머신러닝, 딥러닝 철저 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=173025439)~~
+	* ~~[PyTorch를 활용한 강화학습 / 심층강화학습 실전 입문](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=176215268)~~
 
 ### 수학
 
 * 선형대수학
 	* 1분기, 기초적인 이론 진행 => 실습 병행으로 분량이 넘쳐서 2분기까지 계속 진행
-		* [최신선형대수](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=3417578)(2019년 1~9월)
-		* [프로그래머를 위한 선형대수](https://ridibooks.com/v2/Detail?id=754023084)(2019년 1~9월)
+		* ~~[최신선형대수](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=3417578)~~(2019년 1~9월)
+		* ~~[프로그래머를 위한 선형대수](https://ridibooks.com/v2/Detail?id=754023084)~~(2019년 1~9월)
 	* 4분기, 이론적인 내용을 Python을 사용해서 코드로 풀어보는 것
 		* [코딩 더 매트릭스](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=59668511)
 		* [수치해석 바이블](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=170560621)

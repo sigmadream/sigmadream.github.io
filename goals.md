@@ -4,7 +4,27 @@ title: 나의 목표
 permalink: /goals/
 ---
 
-# 2019 목표
+# 2020년 목표
+
+## 대학원 논문
+* CQRS/Event-Sourcing 관련
+	* [Data Processing System Using CQRS Pattern and NoSQL in V2X Environment](https://www.researchgate.net/profile/Jungin_Choi3/publication/343252319_Data_Processing_System_Using_CQRS_Pattern_and_NoSQL_in_V2X_Environment/links/5f1f7fd8299bf1720d6aab8b/Data-Processing-System-Using-CQRS-Pattern-and-NoSQL-in-V2X-Environment.pdf)
+	* 이벤트 소싱과 CQRS 패턴을 활용한 데이터 재현 및 분산처리 사례 및 연구 동향(예정)
+* 소프트웨어 교육
+	* 피드백 기능을 활용한 온라인 저지 시스템 제안
+	
+## 커뮤니티 활동
+* 회고 준비 중
+
+## 개인 스터디
+* 회고 준비 중
+
+## 업무 관련
+* 회고 준비 중
+
+------
+
+# 2019년 목표
 
 ## 2019년 회고
 

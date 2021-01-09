@@ -6,31 +6,36 @@ permalink: /about/
 
 ### 관심분야
 
-* 데이터 수집 및 분석
-  * 적당한 `Excel`과 약간의 `pandas`(feat. `matplotlib`, `scikit-learn`)로 ~~어떻게~~ 잘 버텨나가는 중 입니다.
-* 함수형 프로그래밍([Functional programming](https://en.wikipedia.org/wiki/Functional_programming))
-  * 다들 FP의 시작과 끝은 `LISP`이라는데, 겁이 많아서 `Haskell`로 시작하고, `Scala`로 끝날 것 같은 기분입니다.
-  * 범주론(category theory)~~검색하면 아리스토텔레스가 나오는 이유는?~~도 배우면 좋다는데, 어디서 시작해야 할 지 모르겠네요.
-* 컴파일러([Compiler](https://en.wikipedia.org/wiki/Compiler))
-  * `LLVM`이나 `GCC`와 같은 소프트웨어에 나의 부질없음을 끼얹어 보려는 강렬한 욕망이 있습니다.
-  * `LLVM`에 관심이 많아서 계속해서 문서를 읽고 있는데, 문서만 읽고 있게 됩니다.
+- 로그 수집 및 분석 그리고 재현
+  - CQRS 등과 같은 기술을 사용해서 수집된 로그를 재현하는 것
+  - 해당 로그를 사용해서 분석(with 머신러닝/딥러닝)하고 예측하는 것
+- 데이터 수집 및 분석
+  - python의 `pandas`(feat. `matplotlib`, `scikit-learn`)를 사용해서 데이터 분석을 즐겨함
+  - 분석 결과를 바탕으로 서비스를 만드는 것에 흥미가 많음
+- 함수형 프로그래밍([Functional programming](https://en.wikipedia.org/wiki/Functional_programming))
+  - 현재는 FP를 사용해서 데이터구조와 알고리즘을 작성하는 것을 열심히 학습하는 중
+- 컴파일러([Compiler](https://en.wikipedia.org/wiki/Compiler))
+  - `LLVM`에 관심이 많아서 계속해서 문서를 읽고 있는데, 문서만 읽고 있게 됩니다.
+  - Apple의 M1과 관련된 컴파일 관련 issue에 관심을 가지고 있음, 해당 issue가 향후(늦어도 3~5년 뒤?) 다양한 곳에 사용될 것으로 혼자서 예상 중(?)
 
-### 사용언어
+### 사용하는 기술
 
-* C(<=C99)/C++(>=14)
-  * `C`는 `ISO/IEC 9899:1999` 버전에 만족하는 컴파일 환경에서 개발했기 때문에 `ISO/IEC 9899:2011`은 현재 전혀 모릅니다.
-  * `C++`은 서버개발을 위해서 `auto`,`lambda` 등을 사용하기 위해서 `ISO/IEC 14882:2014(E)` 표준을 만족하는 컴파일 환경에서 개발하기 위해서 약간의 공부를 하였으나, `C++` 위원회에서 `3년마다` 언어를 개정하기로 결정한 이후(이걸 [`기차 모델`](https://herbsutter.com/2016/06/30/trip-report-summer-iso-c-standards-meeting-oulu/)이라 하더군요!) `C++14`의 중력에 의지하는 중 입니다.
-* Java(>= 1.8)
-  * 영원히 `JDK 5`를 사용할꺼라 생각했는데, 다행히 요즘은 `JDK 8`을 사용하고 있으며 안타깝게도 `JDK 11`(~~응? JDK 9/10은 어디간거야?~~)은 관망하고 있습니다.
-* Spring(>= 5.0) / Spring Boot(>= 2.0)
-  * 왜 `JUnit 5`를 사용하지 않는지 궁금하기만 `Spring 5`(feat. `Spring Boot`) 이지만, `Kotlin` 지원 덕분에 `Spring 3`에서 `Spring 5`로 넘어왔습니다.
-  * 덕분에 `JPA` 인터페이스에 `@repository`를 습관처럼 붙이고 있네요. 빨리 적응해야 될텐데 걱정입니다.
-* Python(>= 3.5) / Django(>= 2.0)
-  * 영원히 `Python 2.6`을 사용할꺼라 생각했는데, 회사 시스템 및 대부분의 개발자가 `Python 3`로 이동하는걸 보고 조급하게 따라갔습니다.
-  * 차이점이라곤 `print`와 `print()` 밖에 없을 줄 알았는데, 생각보다 많은 부분이 변경되어(~~`True Division` 같은 어설픈거에 너무 크게 당했고, `Unicode`가 명치를...~~) 어색하게 사용하고 있습니다. 그래서 py3에 대해서 지금 문서를 따로 보고 있습니다.
-  * 아,`Django`는 `url.py`를 `1.11`에 맞게 변경해서 사용하는 괴랄함으로 버티고 현재 학습 중 입니다.
+- C(<=C99)/C++(>=14)
+  - `C11`을 학습했지만, 2020년 작업했던 대부분의 펌웨어가 `C99`를 기반으로 작성해야 했다는 점에서 아쉬움
+  - `C++14`를 학습했으나, 단 한번도 실무에 적용해본적이 없어서 내가 학습한 내용이 얼만큼 정확한지 확인할 수 없음
+    - 현재는 내가 만들어둔 코드를 보고 `이건 아니였어` 정도의 수준임
+- Java(>= 15)
+  - JDK는 11버전까진 확실히 학습했고, `Java Flight Recorder`를 사용해서 내가 운영하는 서비스를 프로파일링까지 했으나 서비스에 부하가 전혀 없어서(이것은 슬픈...일이지 않은가?!) 효과가 없었음
+  - Spring(>= 5.0) / Spring Boot(>= 2.0)
+    - `JUnit 5`로 확실히 정착 했음
+    - 하지만 `Kotlin`을 너무 등한시해서 `Kotlin`으로 코드를 변경하는 것을 현재는 학습 중
+- Python(>= 3.8)
+  - python 사용시 type hint를 사용하고 있으며, django의 경우 문서를 참고해서 django 3.x에서 요구하는 형태로 코드를 변경했음
+    - 하지만 type hint의 경우 많은 python 개발자들이 좋아하지 않는 것 같음
+  - Django(>= 3.1)
+    - django 3.x의 변경사항을 적용하고자 했으나 2.x 기반의 프로젝트 중에서 3.x로 마이그레이션 한 경우가 1건이라서 아직은 확신이 없음
 
 ### 연락처
 
-* Blog : [www.sangkon.com](http://www.sangkon.com)
-* Mail : [무엇이든 물어보고 싶을 땐](mailto:ask@sangkon.com), [개인적으로 궁금함이 있다면!](mailto:sigmadream@gmail.com)
+- Blog : [www.sangkon.com](http://www.sangkon.com)
+- Mail : [무엇이든 물어보고 싶을 땐](mailto:ask@sangkon.com), [개인적으로 궁금함이 있다면!](mailto:sigmadream@gmail.com)

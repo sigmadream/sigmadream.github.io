@@ -5,24 +5,24 @@
 //   str: string
 // Returns:
 //   string
-var majusculeFirst = function(str) {
+var majusculeFirst = function (str) {
   var temp = str.charAt(0).toUpperCase();
   for (var i = 1; i < str.length; i++) {
     temp += str.charAt(i).toLowerCase();
   }
   return temp;
-}
+};
 
 // Retrieves the value of a GET parameter with a given key
 // Accepts:
 //   param: string
 // Returns:
 //   string or null
-var getParam = function(param) {
+var getParam = function (param) {
   var queryString = window.location.search.substring(1),
-      queries = queryString.split("&");
+    queries = queryString.split('&');
   for (var i in queries) {
-    var pair = queries[i].split("=");
+    var pair = queries[i].split('=');
     if (pair[0] == param) {
       return pair[1];
     }
@@ -37,17 +37,17 @@ var getParam = function(param) {
 //   value - filter value of property
 // Returns:
 //  array of post objects
-var filterPostsByPropertyValue = function(posts, property, value) {
+var filterPostsByPropertyValue = function (posts, property, value) {
   var filteredPosts = [];
   // The last element is a null terminator
   posts.pop();
   for (var i in posts) {
     var post = posts[i],
-        prop = post[property];
-    
+      prop = post[property];
+
     // Last element of tags is null
     post.tags.pop();
-    
+
     // The property could be a string, such as a post's category,
     // or an array, such as a post's tags
     if (prop.constructor == String) {
@@ -62,7 +62,7 @@ var filterPostsByPropertyValue = function(posts, property, value) {
       }
     }
   }
-  
+
   return filteredPosts;
 };
 
@@ -72,56 +72,71 @@ var filterPostsByPropertyValue = function(posts, property, value) {
 //   value: string of name of object we're displaying
 //   posts: array of post objects
 // Returns: nothing
-var layoutResultsPage = function(property, value, posts) {
+var layoutResultsPage = function (property, value, posts) {
   // Make sure we're on the search results page
   var $container = $('#results');
   if ($container.length == 0) return;
-  
+
   // Update the header
-  var str = majusculeFirst(property) + " Listing for ‘" + majusculeFirst(value) + '’';
+  var str =
+    majusculeFirst(property) + ' Listing for ‘' + majusculeFirst(value) + '’';
   $container.find('h1').text(str);
-  
+
   // Loop through each post to format it
   for (var i in posts) {
     // Create an unordered list of the post's tags
     var tagsList = '<ul class="tags cf">',
-        post     = posts[i],
-        tags     = post.tags;
-        
+      post = posts[i],
+      tags = post.tags;
+
     for (var j in tags) {
-      tagsList += '<li><a href="/search/?tags=' + tags[j] + '">' + tags[j].toLowerCase() + '</a></li>';
+      tagsList +=
+        '<li><a href="/search/?tags=' +
+        tags[j] +
+        '">' +
+        tags[j].toLowerCase() +
+        '</a></li>';
     }
     tagsList += '</ul>';
-    
+
     $container.find('ul.results').append(
-      '<li>'
+      '<li>' +
         // Page anchor
-        + '<a href="' + post.href + '">'
-        + posts[i].title
-        + '</a>'
+        '<a href="' +
+        post.href +
+        '">' +
+        posts[i].title +
+        '</a>' +
         // Post date
-        + ' <span class="date">- '
-        + posts[i].date.year + '-' + posts[i].date.month + '-' + posts[i].date.day
-        + '</span>'
+        ' <span class="date">- ' +
+        posts[i].date.year +
+        '-' +
+        posts[i].date.month +
+        '-' +
+        posts[i].date.day +
+        '</span>' +
         // Tags
-        + tagsList
-        + '</li>'
+        tagsList +
+        '</li>'
     );
   }
-}
+};
 
 // Formats the search results page for no results
 // Accepts:
 //   property: string of object type we're displaying
 //   value: string of name of object we're displaying
 // Returns: nothing
-var noResultsPage = function(property, value) {
+var noResultsPage = function (property, value) {
   // Make sure we're on the search results page
   var $container = $('#results');
   if ($container.length == 0) return;
-  
-  $container.find('h1').text('No Results Found.').after('<p class="nadda"></p>');
-  
+
+  $container
+    .find('h1')
+    .text('No Results Found.')
+    .after('<p class="nadda"></p>');
+
   var txt = "We couldn't find anything associated with '" + value + "' here.";
   $container.find('p.nadda').text(txt);
 };
@@ -130,31 +145,31 @@ var noResultsPage = function(property, value) {
 // Accepts:
 //   elements: jQuery elements in which to replace tags
 // Returns: nothing
-var replaceERBTags = function(elements) {  
-  elements.each(function() {
+var replaceERBTags = function (elements) {
+  elements.each(function () {
     // Only for text blocks at the moment as we'll strip highlighting otherwise
     var $this = $(this),
-        txt   = $this.html();
-    
+      txt = $this.html();
+
     // Replace <%=  %>with {{ }}
-    txt = txt.replace(new RegExp("&lt;%=(.+?)%&gt;", "g"), "{{$1}}");
+    txt = txt.replace(new RegExp('&lt;%=(.+?)%&gt;', 'g'), '{{$1}}');
     // Replace <% %> with {% %}
-    txt = txt.replace(new RegExp("&lt;%(.+?)%&gt;", "g"), "{%$1%}");
-    
+    txt = txt.replace(new RegExp('&lt;%(.+?)%&gt;', 'g'), '{%$1%}');
+
     $this.html(txt);
   });
 };
 
-$(function() {
+$(function () {
   var map = {
-    'category' : getParam('category'),
-    'tags'     : getParam('tags'),
-    'search'   : getParam('search')
+    category: getParam('category'),
+    tags: getParam('tags'),
+    search: getParam('search'),
   };
 
-  $.each(map, function(type, value) {
+  $.each(map, function (type, value) {
     if (value !== null) {
-      $.getJSON('/search.json', function(data) {
+      $.getJSON('/search.json', function (data) {
         posts = filterPostsByPropertyValue(data, type, value);
         if (posts.length === 0) {
           noResultsPage(type, value);
@@ -164,7 +179,7 @@ $(function() {
       });
     }
   });
-  
+
   // Replace ERB-style Liquid tags in highlighted code blocks...
   replaceERBTags($('div.highlight').find('code.text'));
   // ... and in inline code

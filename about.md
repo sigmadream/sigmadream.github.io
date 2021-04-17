@@ -7,16 +7,16 @@ permalink: /about/
 ### 관심분야
 
 - 로그 수집 및 분석 그리고 재현
-  - CQRS 등과 같은 기술을 사용해서 수집된 로그를 재현하는 것
-  - 해당 로그를 사용해서 분석(with 머신러닝/딥러닝)하고 예측하는 것
+  - `CQRS` 등과 같은 기술을 사용해서 수집된 로그를 수집하고 관리하는 것
+  - 로그를 사용해서 분석(with 머신러닝/딥러닝)하고 예측하는 것
 - 데이터 수집 및 분석
   - python의 `pandas`(feat. `matplotlib`, `scikit-learn`)를 사용해서 데이터 분석을 즐겨함
   - 분석 결과를 바탕으로 서비스를 만드는 것에 흥미가 많음
 - 함수형 프로그래밍([Functional programming](https://en.wikipedia.org/wiki/Functional_programming))
   - 현재는 FP를 사용해서 데이터구조와 알고리즘을 작성하는 것을 열심히 학습하는 중
+  - `Haskell`을 즐겨 사용함
 - 컴파일러([Compiler](https://en.wikipedia.org/wiki/Compiler))
-  - `LLVM`에 관심이 많아서 계속해서 문서를 읽고 있는데, 문서만 읽고 있게 됩니다.
-  - Apple의 M1과 관련된 컴파일 관련 issue에 관심을 가지고 있음, 해당 issue가 향후(늦어도 3~5년 뒤?) 다양한 곳에 사용될 것으로 혼자서 예상 중(?)
+  - `LLVM` 기반의 정적분석기에 관심이 많음
 
 ### 사용하는 기술
 

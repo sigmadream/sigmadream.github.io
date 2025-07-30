@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>
+      {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{
+      site.description }}
+    </title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ site.baseurl }}/style.css"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.name }} - {{ site.description }}"
+      href="{{ site.baseurl }}/feed.xml"
+    />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <!-- tag, category search -->
+    <script defer src="/js/alexpearce.js"></script>
+    <style>
+      @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+      @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+      @import url(//fonts.googleapis.com/css?family=Exo+2);
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .main-nav a,
+      .subscribe-button,
+      .page-title,
+      .page-description,
+      .post-meta,
+      .read-next-story .post:before,
+      .pagination,
+      .site-footer {
+        font-family: "Exo 2", "Spoqa Han Sans", "Spoqa Han Sans JP", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"
+            ><img src="{{ site.avatar }}"
+          /></a>
+
+          <div class="site-info">
+            <h1 class="site-name">
+              <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+            </h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about/">About</a>
+            <a href="{{ site.baseurl }}/goals/">Goals</a>
+            <a href="{{ site.baseurl }}/archive/">Archive</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">{{ content }}</div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">{% include svg-icons.html %}</footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>

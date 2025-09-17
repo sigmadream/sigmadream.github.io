@@ -1,92 +1,50 @@
 # 개발자를 위한 macOS(>= Sequoia) 설정
 
+> 새로운 마음으로 시작하고 싶은 개발자들을 위한 작은 가이드 입니다. 새로운 시작을 위해 가장 중요한 것은 백업입니다. 백업부터 투철하게 하세요. AWS 인증키나 1password 백업파일, 기존에 사용하시던 설정(`.zshrc`, `init.el`, `vscode` 등...)은 어딘가(`Dropbox` or `github`)에 반드시 보관해 주세요. Dropbox 동기화가 최신으로 되어 있는지도 확인하세요. `포멧(Erase)`은 돌아오지 않아요. 백업 및 클라우드에 모든 파일이 동기화 되셨나요? 이제 시작해보죠! - 2025.09.17
 
+운영체제를 새롭게 설치하거나 부득이한 사정으로 인해서 운영체제의 업데이트가 아닌 모든 과정을 다시 설정해야 경우가 있습니다. 대부분의 개발자들이 기존에 사용하던 환경을 뒤로하고, 모든 환경을 새롭게 구성하는 것은 쉽지 않은 결정입니다. 그래서 대부분의 개발자들은 시스템의 문제를 해결할 수 없거나, 발생할 수 있는 오류의 가짓수를 줄이기 위한 노력의 일환으로 클린 설치(모든 것을 삭제하고 새롭게 설치하는 것)를 진행합니다. 따라서, 별다른 이유가 없다면 클린 설치나 초기화를 하지 않기를 권해드립니다.
 
+## 클린 설치를 위한 변경사항 안내
 
-새로운 마음으로 시작하고 싶은 개발자들을 위한 작은 가이드 입니다. 새로운 시작을 위해 가장 중요한 것은 백업입니다. 백업부터 투철하게 하세요. AWS 인증키나 1password 백업파일, 기존에 사용하시던 설정(.zshrc, init.el, vscode 등...)은 어딘가(Dropbox or github)에 반드시 보관해 주세요. Dropbox 동기화가 최신으로 되어 있는지도 확인하세요. 포멧(Erase)은 돌아오지 않아요. 백업 및 클라우드에 모든 파일이 동기화 되셨나요? 이제 시작해보죠! - 2023.09.27
+더 이상 USB를 사용한 설치 디스크를 만들어서 진행하지 않아도 됩니다. 설정에서 제공되는 macOS 업그레이드(upgrade)를 선택하신 후에, 초기화(`System Settings > General > Transfer or Reset > Erase All Content and Settings`)를 선택하시면 됩니다. 이후 과정은 macOS의 안내에 따라 진행하시면 됩니다.
 
+### 클린 설치시 주의사항
 
+> USB를 사용하여 설치 디스크를 만들어서 진행하고 싶다면, USB 설치 디스크를 선호하시는 분들은 가장 뒷부분의 Appendix를 참고해주세요.  
 
+`Ventura` 버전부터 초기화 기능이 강력하기 때문에 USB 설치 디스크를 만들어서 클린 설치를 해야 할 이유가 거의 없지만, USB 클린 설치를 원하시는 분들은 별도의 진행절차를 확인해주세요. 하지만 가능하면 USB 설치는 권해드리지 않습니다. 왜냐하면, USB 설치시 발생할 수 있는 특이사항(하드웨어 인증)의 경우 대처가 힘들 수 있습니다. 가능하시면 업데이트 이후 초기화를 선택하시길 권해드립니다. USB로 새로운 운영체제를 설치하는 건 `Intel` 하드웨어 기반의 macOS 사용자 뿐만 아니라 모든 macOS 사용자에게 권해드리지 않습니다.
 
-클린 설치를 위한 변경사항 안내
+## 운영체제 설정
 
+> 제가 개인적으로 사용하는 시스템 설정입니다. 간략하게 해당 설정을 적용/미적용 하는 이유를 적어두었으니 참고하시면 좋을 듯 합니다.
 
-더 이상 USB를 사용한 설치 디스크를 만들어서 진행하지 않아도 됩니다. 설정에서 제공되는 macOS 업그레이드(upgrade)를 선택하신 후에, 초기화(System Settings > General > Transfer or Reset > Erase All Content and Settings)를 선택하시면 됩니다. 이후 과정은 macOS의 안내에 따라 진행하시면 됩니다.
+### 시스템 설정(System Settings)
 
-
-
-
-
-기존에는 USB를 사용하여 설치 디스크를 만들어서 진행했지만, Ventura 버전부터 초기화 기능이 강력하기 때문에 USB 설치 디스크를 만들어서 클린 설치를 해야 할 이유가 거의 없습니다. 만약, USB 설치 디스크를 선호하시는 분들은 가장 뒷부분의 Appendix를 참고해주세요.
-
-
-
-
-
-
-클린 설치시 주의사항
-
-
-운영체제를 새롭게 설치하거나 부득이한 사정으로 인해서 운영체제의 업데이트가 아닌 모든 과정을 다시 설정해야 경우가 있습니다. 대부분의 개발자들이 기존에 사용하던 환경을 뒤로하고, 모든 환경을 새롭게 구성하는 것은 쉽지 않은 결정입니다. 그래서 대부분의 개발자들은 시스템의 문제를 해결할 수 없거나, 발생할 수 있는 오류의 가짓수를 줄이기 위한 노력의 일환으로 클린 설치(모든 것을 삭제하고 새롭게 설치하는 것)를 진행합니다.
-
-
-M1/M2의 경우 USB 설치시 발생할 수 있는 특이사항(하드웨어 인증)의 경우 대처가 힘들 수 있습니다. 가능하시면 업데이트 이후 초기화를 선택하시길 권해드립니다. USB로 새로운 운영체제를 설치하는 건 Intel 하드웨어 기반의 macOS 사용자 뿐만 아니라 모든 macOS 사용자에게 권해드리지 않습니다.
-
-
-
-시스템 설정
-
-
-제가 개인적으로 사용하는 시스템 설정입니다. 간략하게 해당 설정을 적용/미적용 하는 이유를 적어두었으니 참고하시면 좋을 듯 합니다.
-
-
-
-시스템 설정(System Settings)
-
-
- * General
+- General   
+  - `About > Name`은 iCloud에 표시될 기기이름 입니다.
+  - `Date & Time > 24-hour time` 등과 같이 자주 사용하시는 옵션을 선택하세요.
+  - Language & Region > Preferred Languages > 'English - Primary', 'Korean' 로 설정합니다. 개발 과정에서 오류 및 에러가 한글로 출력되지 않도록 하기 위해서 영어를 Primary로 설정하였습니다. 
+  - `Sharing > Local hostname`은 Terminal에 표시됩니다. 될 수 있으면 짧고 적당한(?) 것으로 변경하세요.
    
-   * About > Name은 iCloud에 표시될 기기이름 입니다.
-   * Date & Time, 24-hour time 등과 같이 자주 사용하시는 옵션을 선택하세요.
-   * Language & Region > Preferred Languages > 'English - Primary', 'Korean' 로 설정합니다. 개발 과정에서 오류 및 에러가 한글로 출력되지 않도록 하기 위해서 영어를 Primary로 설정하였습니다. 그리고 Translation Languages...에 필요한 언어를 추가해주세요.
-   * Sharing의 hostname은 Terminal에 표시됩니다. 될 수 있으면 짧고 적당한(?) 것으로 변경하세요.
-   
+- Appearance
+  - `Apperance > Dark`를 선택하였습니다. 밝은색을 원하시면 Light를 선택하세요.
+  
+- Menubar
+  - Spotlight, Wi-Fi, Bluetooth, Battery(Battery Options... > Show Percentage), Focus, Screen Mirroring, Display, Sound(Always Show), Now Playing
 
-
-
-
-
- * 
+- Siri
+  - `Listen for "Siri야" > On`, `Keyboard shortcut > Off`, `Language > Korean`
+  
+- Desktop & Dock
+  - `Show suggested and recent apps in Dock > Off`
+  - `Stage Manager > Off`, `Stage Manager > Show recent apps in Stage Manager > On`
+  - `Widgets > Ipone Widgets > Off`
+  - `Mission Control > Automatically rearrange Spaces based on mst recent use > Off`
    
+- Spotlight
+  - `Results from System > Phone Apps > Off` 
    
-   Appearance
-   
-   
-   * Apperance > Dark를 선택하였습니다. 밝은색을 원하시면 Light를 선택하세요.
-   
- * 
-   
-   
-   Control Center
-   
-   
-   * Wi-Fi, Bluetooth, Focus, Stage Manager, Sound를 매뉴바에서 항상 확인(Show is Menu Bar) 할 수 있도록 선택하였습니다.
-   * Battery > Show Percentage를 선택하였습니다.
-   
-
-
-
-
-
- * 
-   
-   
-   Siri & Spotlight
-   
-   
-   * Language > Korean로 설정하였습니다. 요즘에 간단한 일(음악재성, 단순 질문)은 시리를 사용하기 때문에 해당 설정을 한국어로 설정하였습니다. 영어가 약간이라도 익숙하시면 영문으로 하시는게 사용경험이 좋으니, 영어 사용도 고려해보세요.
-   
- * 
+  
    
    
    Desktop & Dock
@@ -248,7 +206,7 @@ Zsh 설정
    
    * plist를 수정하기 위해서 가장 좋은 방법은 Xcode를 설치하는 것 입니다(여타의 다른 소프트웨어를 사용하셔도 됩니다만 개인적으로 Xcode를 권장합니다).
    * Finder에서 Go > Go to Folder(Command + Shift + G)를 선택하여 ~/Library/Preferences/com.apple.symbolichotkeys.plist를 선택합니다.
-   * 해당 파일의 내용 중에서 <key>61</key>을 찾아서 <number>131072</number>로 변경하고 파일을 저장합니다.
+   * 해당 파일의 내용 중에서 <key>61</key>을 찾아서 <item 2>786,432</item2>의 <number>131072</number>로 변경하고 파일을 저장합니다.
    * 저장 후에 맥을 재시동하세요.
    
  * 

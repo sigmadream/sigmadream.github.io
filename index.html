@@ -2,29 +2,61 @@
 layout: default
 ---
 
-<!-- This loops through the paginated posts -->
+<!-- This loops through blog posts, excluding news-tagged posts -->
+{% assign posts_per_page = site.paginate | default: 15 %}
+{% assign current_page = paginator.page | default: 1 %}
+{% assign start_index = current_page | minus: 1 | times: posts_per_page %}
+{% assign end_index = start_index | plus: posts_per_page %}
+{% assign total_blog_posts = 0 %}
+{% for post in site.posts %}
+  {% unless post.tags contains "news" %}
+    {% assign total_blog_posts = total_blog_posts | plus: 1 %}
+  {% endunless %}
+{% endfor %}
+{% assign total_blog_pages = total_blog_posts | divided_by: posts_per_page %}
+{% assign remaining_blog_posts = total_blog_posts | modulo: posts_per_page %}
+{% if remaining_blog_posts > 0 %}
+  {% assign total_blog_pages = total_blog_pages | plus: 1 %}
+{% endif %}
+
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% assign blog_index = 0 %}
+  {% assign shown_posts = 0 %}
+  {% for post in site.posts %}
+    {% unless post.tags contains "news" %}
+      {% if blog_index >= start_index and blog_index < end_index %}
   <article class="post">
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
     <div class="entry">{{ post.content | strip_html | truncatewords:40}}</div>
     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 읽기</a>
   </article>
+        {% assign shown_posts = shown_posts | plus: 1 %}
+      {% endif %}
+      {% assign blog_index = blog_index | plus: 1 %}
+    {% endunless %}
   {% endfor %}
+  {% if shown_posts == 0 %}
+  <p>표시할 블로그 글이 없습니다.</p>
+  {% endif %}
 </div>
 
 <!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
+{% if total_blog_pages > 1 %}
 <div class="pagination">
-  {% if paginator.previous_page %}
+  {% if current_page > 1 %}
+    {% assign previous_blog_page = current_page | minus: 1 %}
+    {% if previous_blog_page == 1 %}
+  <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 이전</a>
+    {% else %}
   <a
-    href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+    href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', previous_blog_page }}"
     >&laquo; 이전</a
   >
+    {% endif %}
   {% else %}
   <span>&laquo; 이전</span>
-  {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
-  paginator.page %}
+  {% endif %} {% for page in (1..total_blog_pages) %} {% if page ==
+  current_page %}
   <em>{{ page }}</em>
   {% elsif page == 1 %}
   <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}"
@@ -35,9 +67,10 @@ layout: default
     href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
     >{{ page }}</a
   >
-  {% endif %} {% endfor %} {% if paginator.next_page %}
+  {% endif %} {% endfor %} {% if current_page < total_blog_pages %}
+    {% assign next_blog_page = current_page | plus: 1 %}
   <a
-    href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+    href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', next_blog_page }}"
     >다음 &raquo;</a
   >
   {% else %}

@@ -2,6 +2,7 @@
 layout: post
 title: 데이터베이스 인터널스
 author: 알렉스 페트로프 (지은이), 이우현 (옮긴이), 이태휘 (감수)
+tags: book
 ---
 
 ## 1

@@ -2,6 +2,7 @@
 layout: post
 title: 모던 자바스크립트 핵심 가이드
 author: 알베르토 몬탈레시 (지은이), 임지순, 권영재 (옮긴이)
+tags: book
 ---
 
 ## 1

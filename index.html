@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<!-- This loops through blog posts, excluding news-tagged posts -->
+<!-- This loops through blog posts, excluding news- and book-tagged posts -->
 {% assign posts_per_page = site.paginate | default: 15 %}
 {% assign current_page = paginator.page | default: 1 %}
 {% assign start_index = current_page | minus: 1 | times: posts_per_page %}
 {% assign end_index = start_index | plus: posts_per_page %}
 {% assign total_blog_posts = 0 %}
 {% for post in site.posts %}
-  {% unless post.tags contains "news" %}
+  {% unless post.tags contains "news" or post.tags contains "book" %}
     {% assign total_blog_posts = total_blog_posts | plus: 1 %}
   {% endunless %}
 {% endfor %}
@@ -23,7 +23,7 @@ layout: default
   {% assign blog_index = 0 %}
   {% assign shown_posts = 0 %}
   {% for post in site.posts %}
-    {% unless post.tags contains "news" %}
+    {% unless post.tags contains "news" or post.tags contains "book" %}
       {% if blog_index >= start_index and blog_index < end_index %}
   <article class="post">
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>

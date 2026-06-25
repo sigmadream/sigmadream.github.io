@@ -1,10 +1,8 @@
 
-/***********************/
-/* SYNTAX HIGHLIGHTING */
-/***********************/
+/* 코드 하이라이트와 인라인 코드 스타일 */
 
 .highlight { 
-  background-color: $darkerGray;
+  background-color: #0d1117;
   padding: 5px 10px;
   margin: 20px 0;
   overflow-x: hidden;
@@ -18,11 +16,13 @@
 }
 
 .highlight code {
+  color: #c9d1d9;
   white-space: inherit;
 }
  
 code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
   font-size: 0.92em;
   line-height: 1.55;
   color: #4b5563;
@@ -39,141 +39,140 @@ blockquote code {
   white-space: normal;
 }
  
-// Solarized Light Pygments 
-// Thanks https://gist.github.com/edwardhotchkiss/2005058
-/* Comment */
-.highlight .c, .highlight .c1 { color: #586E75 }
-/* Error */
-.highlight .err { color: #93A1A1 }
-/* Generic */
-.highlight .g { color: #93A1A1 }
-/* Keyword */
-.highlight .k { color: #859900 }
-/* Literal */
-.highlight .l { color: #93A1A1 }
-/* Name */
-.highlight .n { color: #93A1A1 }
-/* Operator */
-.highlight .o { color: #859900 }
-/* Other */
-.highlight .x { color: #CB4B16 }
-/* Punctuation */
-.highlight .p { color: #93A1A1 }
-/* Comment.Multiline */
-.highlight .cm { color: #586E75 }
-/* Comment.Preproc */
-.highlight .cp { color: #859900 }
-/* Comment.Single */
-.highlight .c1 { color: #586E75 }
-/* Comment.Special */
-.highlight .cs { color: #859900 }
-/* Generic.Deleted */
-.highlight .gd { color: #2AA198 }
-/* Generic.Emph */
-.highlight .ge { color: #93A1A1; font-style: italic }
-/* Generic.Error */
-.highlight .gr { color: #DC322F }
-/* Generic.Heading */
-.highlight .gh { color: #CB4B16 }
-/* Generic.Inserted */
-.highlight .gi { color: #859900 }
-/* Generic.Output */
-.highlight .go { color: #93A1A1 }
-/* Generic.Prompt */
-.highlight .gp { color: #93A1A1 }
-/* Generic.Strong */
-.highlight .gs { color: #93A1A1; font-weight: bold }
-/* Generic.Subheading */
-.highlight .gu { color: #CB4B16 }
-/* Generic.Traceback */
-.highlight .gt { color: #93A1A1 }
-/* Keyword.Constant */
-.highlight .kc { color: #CB4B16 }
-/* Keyword.Declaration */
-.highlight .kd { color: #268BD2 }
-/* Keyword.Namespace */
-.highlight .kn { color: #859900 }
-/* Keyword.Pseudo */
-.highlight .kp { color: #859900 }
-/* Keyword.Reserved */
-.highlight .kr { color: #268BD2 }
-/* Keyword.Type */
-.highlight .kt { color: #DC322F }
-/* Literal.Date */
-.highlight .ld { color: #93A1A1 }
-/* Literal.Number */
-.highlight .m { color: #2AA198 }
-/* Literal.String */
-.highlight .s { color: #2AA198 }
-/* Name.Attribute */
-.highlight .na { color: #93A1A1 }
-/* Name.Builtin */
-.highlight .nb { color: #B58900 }
-/* Name.Class */
-.highlight .nc { color: #268BD2 }
-/* Name.Constant */
-.highlight .no { color: #CB4B16 }
-/* Name.Decorator */
-.highlight .nd { color: #268BD2 }
-/* Name.Entity */
-.highlight .ni { color: #CB4B16 }
-/* Name.Exception */
-.highlight .ne { color: #CB4B16 }
-/* Name.Function */
-.highlight .nf { color: #268BD2 }
-/* Name.Label */
-.highlight .nl { color: #93A1A1 }
-/* Name.Namespace */
-.highlight .nn { color: #93A1A1 }
-/* Name.Other */
-.highlight .nx { color: #555 }
-/* Name.Property */
-.highlight .py { color: #93A1A1 }
-/* Name.Tag */
-.highlight .nt { color: #268BD2 }
-/* Name.Variable */
-.highlight .nv { color: #268BD2 }
-/* Operator.Word */
-.highlight .ow { color: #859900 }
-/* Text.Whitespace */
-.highlight .w { color: #93A1A1 }
-/* Literal.Number.Float */
-.highlight .mf { color: #2AA198 }
-/* Literal.Number.Hex */
-.highlight .mh { color: #2AA198 }
-/* Literal.Number.Integer */
-.highlight .mi { color: #2AA198 }
-/* Literal.Number.Oct */
-.highlight .mo { color: #2AA198 }
-/* Literal.String.Backtick */
-.highlight .sb { color: #586E75 }
-/* Literal.String.Char */
-.highlight .sc { color: #2AA198 }
-/* Literal.String.Doc */
-.highlight .sd { color: #93A1A1 }
-/* Literal.String.Double */
-.highlight .s2 { color: #2AA198 }
-/* Literal.String.Escape */
-.highlight .se { color: #CB4B16 }
-/* Literal.String.Heredoc */
-.highlight .sh { color: #93A1A1 }
-/* Literal.String.Interpol */
-.highlight .si { color: #2AA198 }
-/* Literal.String.Other */
-.highlight .sx { color: #2AA198 }
-/* Literal.String.Regex */
-.highlight .sr { color: #DC322F }
-/* Literal.String.Single */
-.highlight .s1 { color: #2AA198 }
-/* Literal.String.Symbol */
-.highlight .ss { color: #2AA198 }
-/* Name.Builtin.Pseudo */
-.highlight .bp { color: #268BD2 }
-/* Name.Variable.Class */
-.highlight .vc { color: #268BD2 }
-/* Name.Variable.Global */
-.highlight .vg { color: #268BD2 }
-/* Name.Variable.Instance */
-.highlight .vi { color: #268BD2 }
-/* Literal.Number.Integer.Long */
-.highlight .il { color: #2AA198 }
+// Pygments 토큰 색상은 어두운 코드 블록 배경에 맞춘 고대비 팔레트입니다.
+/* 주석 */
+.highlight .c, .highlight .c1 { color: #8b949e }
+/* 오류 */
+.highlight .err { color: #ff7b72 }
+/* 일반 토큰 */
+.highlight .g { color: #c9d1d9 }
+/* 키워드 */
+.highlight .k { color: #ff7b72 }
+/* 리터럴 */
+.highlight .l { color: #a5d6ff }
+/* 이름 */
+.highlight .n { color: #c9d1d9 }
+/* 연산자 */
+.highlight .o { color: #ff7b72 }
+/* 기타 */
+.highlight .x { color: #ffa657 }
+/* 구두점 */
+.highlight .p { color: #c9d1d9 }
+/* 여러 줄 주석 */
+.highlight .cm { color: #8b949e }
+/* 전처리기 주석 */
+.highlight .cp { color: #d2a8ff }
+/* 한 줄 주석 */
+.highlight .c1 { color: #8b949e }
+/* 특수 주석 */
+.highlight .cs { color: #8b949e }
+/* 삭제된 일반 토큰 */
+.highlight .gd { color: #ffa198 }
+/* 강조 일반 토큰 */
+.highlight .ge { color: #c9d1d9; font-style: italic }
+/* 일반 오류 */
+.highlight .gr { color: #ff7b72 }
+/* 일반 제목 */
+.highlight .gh { color: #d2a8ff }
+/* 추가된 일반 토큰 */
+.highlight .gi { color: #56d364 }
+/* 일반 출력 */
+.highlight .go { color: #8b949e }
+/* 일반 프롬프트 */
+.highlight .gp { color: #8b949e }
+/* 일반 굵게 */
+.highlight .gs { color: #c9d1d9; font-weight: bold }
+/* 일반 부제목 */
+.highlight .gu { color: #d2a8ff }
+/* 일반 트레이스백 */
+.highlight .gt { color: #ff7b72 }
+/* 키워드 상수 */
+.highlight .kc { color: #79c0ff }
+/* 키워드 선언 */
+.highlight .kd { color: #ff7b72 }
+/* 키워드 네임스페이스 */
+.highlight .kn { color: #ff7b72 }
+/* 키워드 의사 토큰 */
+.highlight .kp { color: #ff7b72 }
+/* 예약 키워드 */
+.highlight .kr { color: #ff7b72 }
+/* 키워드 타입 */
+.highlight .kt { color: #ff7b72 }
+/* 날짜 리터럴 */
+.highlight .ld { color: #a5d6ff }
+/* 숫자 리터럴 */
+.highlight .m { color: #79c0ff }
+/* 문자열 리터럴 */
+.highlight .s { color: #a5d6ff }
+/* 속성 이름 */
+.highlight .na { color: #79c0ff }
+/* 내장 이름 */
+.highlight .nb { color: #d29922 }
+/* 클래스 이름 */
+.highlight .nc { color: #d2a8ff }
+/* 상수 이름 */
+.highlight .no { color: #79c0ff }
+/* 데코레이터 이름 */
+.highlight .nd { color: #d2a8ff }
+/* 엔티티 이름 */
+.highlight .ni { color: #ffa657 }
+/* 예외 이름 */
+.highlight .ne { color: #ff7b72 }
+/* 함수 이름 */
+.highlight .nf { color: #d2a8ff }
+/* 레이블 이름 */
+.highlight .nl { color: #79c0ff }
+/* 네임스페이스 이름 */
+.highlight .nn { color: #c9d1d9 }
+/* 기타 이름 */
+.highlight .nx { color: #c9d1d9 }
+/* 속성 이름 */
+.highlight .py { color: #c9d1d9 }
+/* 태그 이름 */
+.highlight .nt { color: #79c0ff }
+/* 변수 이름 */
+.highlight .nv { color: #79c0ff }
+/* 단어 연산자 */
+.highlight .ow { color: #ff7b72 }
+/* 공백 텍스트 */
+.highlight .w { color: #c9d1d9 }
+/* 실수 리터럴 */
+.highlight .mf { color: #79c0ff }
+/* 16진수 리터럴 */
+.highlight .mh { color: #79c0ff }
+/* 정수 리터럴 */
+.highlight .mi { color: #79c0ff }
+/* 8진수 리터럴 */
+.highlight .mo { color: #79c0ff }
+/* 백틱 문자열 */
+.highlight .sb { color: #a5d6ff }
+/* 문자 문자열 */
+.highlight .sc { color: #a5d6ff }
+/* 문서 문자열 */
+.highlight .sd { color: #a5d6ff }
+/* 큰따옴표 문자열 */
+.highlight .s2 { color: #a5d6ff }
+/* 이스케이프 문자열 */
+.highlight .se { color: #79c0ff }
+/* heredoc 문자열 */
+.highlight .sh { color: #a5d6ff }
+/* 보간 문자열 */
+.highlight .si { color: #a5d6ff }
+/* 기타 문자열 */
+.highlight .sx { color: #a5d6ff }
+/* 정규식 문자열 */
+.highlight .sr { color: #7ee787 }
+/* 작은따옴표 문자열 */
+.highlight .s1 { color: #a5d6ff }
+/* 심볼 문자열 */
+.highlight .ss { color: #a5d6ff }
+/* 의사 내장 이름 */
+.highlight .bp { color: #79c0ff }
+/* 클래스 변수 이름 */
+.highlight .vc { color: #79c0ff }
+/* 전역 변수 이름 */
+.highlight .vg { color: #79c0ff }
+/* 인스턴스 변수 이름 */
+.highlight .vi { color: #79c0ff }
+/* 긴 정수 리터럴 */
+.highlight .il { color: #79c0ff }

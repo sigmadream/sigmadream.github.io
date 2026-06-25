@@ -1,18 +1,14 @@
 ---
 ---
 
-//
-// IMPORTS
-//
+// 폰트와 공통 스타일 불러오기
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
 @import "_reset";
 @import "_variables";
-// Syntax highlighting @import is at the bottom of this file
 
-/**************/
-/* BASE RULES */
-/**************/
-
+// 기본 요소
 html {
   font-size: 100%;
 }
@@ -27,6 +23,24 @@ body {
   overflow-wrap: break-word;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.main-nav a,
+.subscribe-button,
+.page-title,
+.page-description,
+.post-meta,
+.read-next-story .post:before,
+.pagination,
+.site-footer {
+  font-family: $systemSans;
+}
+
 .container {
   margin: 0 auto;
   max-width: 740px;
@@ -34,11 +48,15 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
-  
   line-height: 1.35;
   margin: 1.6em 0 0.7em;
   padding: 0;
@@ -47,23 +65,24 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 }
-  
-h1 {  
+
+h1 {
   font-size: 32px;
+
   a {
     color: inherit;
   }
 }
 
-h2 {  
+h2 {
   font-size: 26px;
 }
 
-h3 {  
+h3 {
   font-size: 22px;
 }
 
-h4 {  
+h4 {
   font-size: 18px;
   color: $gray;
 }
@@ -76,7 +95,9 @@ a {
   color: $blue;
   text-decoration: none;
   cursor: pointer;
-  &:hover, &:active {
+
+  &:hover,
+  &:active {
     color: $blue;
   }
 }
@@ -102,11 +123,13 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -119,7 +142,7 @@ img {
   color: $gray;
 }
 
-// Specify the color of the selection
+// 텍스트 선택 영역 색상
 ::-moz-selection {
   color: $black;
   background: $lightGray;
@@ -129,26 +152,21 @@ img {
   background: $lightGray;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
+// float 레이아웃 정리를 위한 clearfix 유틸리티
 .clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.clearfix:after,
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
 }
 
-.clearfix:after {
-    clear: both;
+.clearfix:after,
+.cf:after {
+  clear: both;
 }
 
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
+// 레이아웃: 헤더
 .wrapper-masthead {
   margin-bottom: 50px;
 }
@@ -156,7 +174,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-  
+
   @include mobile {
     text-align: center;
   }
@@ -203,7 +221,7 @@ img {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 12px;
-  
+
   @include mobile {
     margin: 3px 0;
   }
@@ -211,10 +229,10 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; 
+  margin-top: 23px; // 아바타와 사이트 정보 높이에 맞춘 헤더 내 세로 보정값입니다.
+  font-family: $helveticaNeue;
   font-size: 18px;
-  
+
   @include mobile {
     float: none;
     margin-top: 9px;
@@ -236,10 +254,7 @@ nav {
   }
 }
 
-//
-// .main
-//
-
+// 레이아웃: 본문 목록과 글 본문
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -250,7 +265,7 @@ nav {
   border-bottom: none;
 }
 
-.post { 
+.post {
   blockquote {
     margin: 1.6em 0;
     border-left: 4px solid #d8dee4;
@@ -285,6 +300,7 @@ nav {
   }
 }
 
+// 레이아웃: 푸터
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -292,7 +308,7 @@ nav {
   background-color: $lightGray;
 }
 
-/*Tag from https://alexpearce.me*/
+// 태그 목록과 글 하단 태그
 .tags {
   padding: 0;
   list-style-type: none;
@@ -322,18 +338,9 @@ nav {
 .post-tags {
   margin: 20px 0 0 0;
 }
-/* normalize.css Clearfix */
+
 .cf {
-  *zoom: 1
-}
-
-.cf:before, .cf:after {
-  content: "";
-  display: table;
-}
-
-.cf:after {
-  clear: both
+  *zoom: 1;
 }
 
 footer {
@@ -341,35 +348,20 @@ footer {
   text-align: center;
 }
 
-/*****************************************************************************/
-/*
-/* TAGS
-/*
-/*****************************************************************************/
-
-/* Tag icon stuff : http://hamishwillee.github.io/2014/06/06/tags-in-jekyll-without-plugins/
--------------------------------------------------- */
-
-
-
-.tag-icon-image
-{
-display:block;
-background-image:url('/images/tagicon.png');
-background-size: 13px;
-background-repeat: no-repeat;
-background-position: left center;
-padding-left:20px;
-} 
-
-
+// 태그 검색 페이지용 보조 스타일
+.tag-icon-image {
+  display: block;
+  background-image: url('/images/tagicon.png');
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+}
 
 .tag-link {
   display: inline;
   font-size: 0.8em;
 }
-
-
 
 .tag-box {
   list-style: none;
@@ -379,7 +371,8 @@ padding-left:20px;
   *zoom: 1;
 }
 
-.tag-box:before, .tag-box:after {
+.tag-box:before,
+.tag-box:after {
   display: table;
   content: "";
   line-height: 0;
@@ -412,6 +405,5 @@ padding-left:20px;
   font-size: 0.625rem;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+// 코드 하이라이트 규칙은 분량이 많으므로 마지막에 불러옵니다.
 @import "_highlights";

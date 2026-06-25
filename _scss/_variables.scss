@@ -1,12 +1,10 @@
 
-//
-// VARIABLES
-//
+// 전역 변수
 
-// Colors
+// 기본 색상
 $blue: #4183C4; 
 
-// Grays
+// 회색 계열
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
@@ -14,13 +12,15 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
-// Font stacks
-$systemSans: -apple-system, BlinkMacSystemFont, "Spoqa Han Sans", "Spoqa Han Sans JP", "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Helvetica, Arial, sans-serif;
+// 한글과 영문이 함께 쓰이는 본문용 시스템 폰트 묶음
+$systemSans: -apple-system, BlinkMacSystemFont, "Spoqa Han Sans",
+  "Spoqa Han Sans JP", "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI",
+  Helvetica, Arial, sans-serif;
 $helvetica: $systemSans;
 $helveticaNeue: $systemSans;
 $georgia: Georgia, serif;
 
-// Mobile breakpoints
+// 모바일 화면 기준
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;

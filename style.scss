@@ -19,8 +19,12 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.72 $helvetica;
   color: $darkGray;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .container {
@@ -35,8 +39,8 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
   
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  line-height: 1.35;
+  margin: 1.6em 0 0.7em;
   padding: 0;
 
   @include mobile {
@@ -45,18 +49,18 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-size: 30px;
+  font-size: 32px;
   a {
     color: inherit;
   }
 }
 
 h2 {  
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h3 {  
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h4 {  
@@ -65,7 +69,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 1em 0;
 }
 
 a {
@@ -78,8 +82,8 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 1em 0;
+  padding-left: 1.4em;
 }
 
 ul {
@@ -91,7 +95,7 @@ ol {
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+  margin: 0.25em 0;
 }
 
 ul ul, ol ul {
@@ -248,12 +252,27 @@ nav {
 
 .post { 
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
+    margin: 1.6em 0;
+    border-left: 4px solid #d8dee4;
+    padding: 0.7em 1em;
+    background: #f8f9fa;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-style: normal;
+  }
+
+  blockquote p {
+    margin: 0.25em 0;
+  }
+
+  .entry li {
+    margin: 0.35em 0;
+    line-height: 1.75;
+  }
+
+  .entry li li {
+    margin: 0.25em 0;
   }
 
   .comments {
